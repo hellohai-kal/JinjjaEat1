@@ -1,0 +1,217 @@
+/* Import Font */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fff6f6, #e7f6f5);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #f7b7b7, #e8d7f5);
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6F61;
+}
+
+/* Order Button */
+.order-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-btn:hover {
+    transform: scale(1.1);
+    background-color: #e85742;
+}
+
+/* Container */
+.container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section */
+.content-section {
+    flex: 1;
+    padding: 4.2rem;
+    background: #fefefe; /* Background color */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Title Styling */
+.content-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center; /* Center title */
+    position: relative;
+}
+
+/* Description Styling */
+.content-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center text */
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center buttons */
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pastel-pink {
+    background-color: #FFD3D3;
+    color: #333;
+}
+
+.pastel-green {
+    background-color: #C6E6E1;
+    color: #333;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Preview */
+.menu-preview {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center menu items */
+    margin-top: 1rem;
+}
+
+.menu-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    width: 180px; /* Width for uniformity */
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    background: #FFFAF0; /* Light color on hover */
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-details {
+    text-align: center;
+}
+
+.menu-name {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0.5rem 0; /* Add margin for spacing */
+}
+
+.menu-description {
+    font-size: 0.9rem;
+    color: #777; /* Lebih ringan untuk deskripsi */
+    margin-bottom: 0.5rem; /* Ruang di bawah deskripsi */
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #FF6F61; /* Warna yang menarik untuk harga */
+    font-weight: bold; /* Tebal untuk menonjolkan harga */
+}
+
+/* Responsif untuk menu item */
+@media (max-width: 768px) {
+    .menu-preview {
+        flex-direction: column; /* Tumpuk secara vertikal pada layar kecil */
+        align-items: center; /* Pusatkan item */
+    }
+
+    .menu-item {
+        width: 80%; /* Lebar 80% pada layar kecil */
+        margin-bottom: 1rem; /* Ruang di bawah setiap item */
+    }
+}
